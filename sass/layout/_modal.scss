@@ -1,0 +1,182 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms linear;
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.modal {
+  position: absolute;
+  width: 528px;
+  min-height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.is-hidden .modal {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+.modal__icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 498px;
+}
+.modal__heading {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  padding-top: 40px;
+  margin-bottom: 12px;
+}
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.modal__input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  outline: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.person-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-color);
+  position: absolute;
+  top: 105px;
+  left: 50px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tel-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-color);
+  position: absolute;
+  top: 175px;
+  left: 50px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-color);
+  position: absolute;
+  top: 240px;
+  left: 50px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input:focus,
+.modal__input:focus .person-icon,
+.modal__input:focus .tel-icon,
+.modal__input:focus .email-icon {
+  border: 1px solid var(--hover-color);
+  fill: var(--hover-color);
+}
+.modal__textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  padding-left: 15px;
+  outline: none;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__textarea:focus {
+  border: 1px solid var(--hover-color);
+}
+.modal__label {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.checkbox-label::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 3px solid #000000;
+  margin-right: 7px;
+}
+.modal__checkbox:checked + .checkbox-label::before {
+  background-color: var(--hover-color);
+  border: none;
+  border-radius: 2px;
+  background-image: url(../images/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center;
+}
+.checkbox-label__link {
+  color: var(--hover-color);
+}
+.modal__submit {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.875;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--secondary-color);
+  width: 200px;
+  margin-left: 124px;
+  background-color: var(--hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 0;
+}
+.modal__submit:hover,
+.modal__icon:hover {
+  cursor: pointer;
+}

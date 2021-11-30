@@ -1,0 +1,96 @@
+.links__envelope {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.links__smartphone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list__icons {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px 25px 100px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+}
+.social-ellipse__icons {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-ellipse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-ellipse:hover,
+.social-ellipse:hover > .social-ellipse__icons,
+.social-ellipse:focus,
+.social-ellipse:focus > .social-ellipse__icons {
+  background-color: var(--hover-color);
+  fill: var(--secondary-color);
+  cursor: pointer;
+}
+.rectangle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 30px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.rectangle-icon:hover,
+.rectangle-icon:hover > .customer-icon,
+.rectangle-icon:focus,
+.rectangle-icon:focus > .customer-icon {
+  fill: var(--hover-color);
+  border-color: var(--hover-color);
+  cursor: pointer;
+}
+.footer-ellipse-icons {
+  margin-bottom: 0;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .figcaption-icons {
+  fill: var(--secondary-color);
+}
+.margin-zero {
+  margin-right: 0;
+}

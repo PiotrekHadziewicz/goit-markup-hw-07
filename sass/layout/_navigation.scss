@@ -1,0 +1,23 @@
+.navigation {
+  margin-left: 93px;
+}
+.navigation__item {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.143;
+  margin-right: 46px;
+}
+.navigation__item-active {
+  color: var(--hover-color);
+  &::after {
+    position: absolute;
+    width: 53px;
+    height: 4px;
+    left: 0;
+    top: 45px;
+    background: var(--hover-color);
+    content: "";
+    border-radius: 2px;
+  }
+}

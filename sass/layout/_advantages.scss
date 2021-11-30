@@ -1,0 +1,19 @@
+.list__header-item {
+  width: 270px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.143;
+  margin: 0 30px 10px 0;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-right: 30px;
+}
