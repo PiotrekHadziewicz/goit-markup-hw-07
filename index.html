@@ -64,50 +64,55 @@
                 Zostaw swoje dane w formularzu poniżej
               </p>
               <form class="modal-form">
-                <label class="modal__label" for="name">Imie</label>
+                <label class="modal-form__label" for="name">Imie</label>
                 <input
                   id="name"
-                  class="modal__input"
+                  class="modal-form__input"
                   type="text"
                   name="firstname"
                 />
                 <svg class="person-icon">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
-                <label class="modal__label" for="tel">Telefon</label>
-                <input id="tel" class="modal__input" type="tel" name="tel" />
+                <label class="modal-form__label" for="tel">Telefon</label>
+                <input
+                  id="tel"
+                  class="modal-form__input"
+                  type="tel"
+                  name="tel"
+                />
                 <svg class="tel-icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-                <label class="modal__label" for="email">Email</label>
+                <label class="modal-form__label" for="email">Email</label>
                 <input
                   id="email"
-                  class="modal__input"
+                  class="modal-form__input"
                   type="email"
                   name="email"
                 />
                 <svg class="email-icon">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-                <label class="modal__label" for="comment">Komentarz</label>
+                <label class="modal-form__label" for="comment">Komentarz</label>
                 <textarea
                   id="comment"
-                  class="modal__textarea"
+                  class="modal-form__textarea"
                   placeholder="Wprowadź tekst"
                 ></textarea>
                 <input
                   id="user-policy"
-                  class="modal__checkbox visually-hidden"
+                  class="modal-form__checkbox visually-hidden"
                   type="checkbox"
                 />
-                <label for="user-policy" class="checkbox-label"
+                <label for="user-policy" class="modal-form__checkbox-label"
                   >Oświadczam iż akceptuję
                   <a href="#" class="checkbox-label__link">Regulamin</a> i
                   <a href="#" class="checkbox-label__link"
                     >Politykę Prywatności.</a
                   ></label
                 >
-                <button type="submit" class="modal__submit">Wyślij</button>
+                <button type="submit" class="modal-form__submit">Wyślij</button>
               </form>
             </div>
           </div>
@@ -201,21 +206,21 @@
           </ul>
         </div>
       </section>
-      <section class="section section-bg">
+      <section class="section section--bg">
         <div class="container">
           <h2 class="heading">Nasz zespół</h2>
           <ul class="list">
             <li class="list__img">
-              <figure class="figure">
+              <figure class="team-photos">
                 <img
                   src="./images/img4.jpg"
                   alt="Mężczyzna w okularach."
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption-item">
+                <figcaption class="team-photos__item">
                   John Doe
-                  <span class="figcaption-item__span">Product Designer </span>
+                  <span class="team-photos__span">Product Designer </span>
                   <div class="social-ellipse">
                     <svg class="social-ellipse__icons">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -240,16 +245,16 @@
               </figure>
             </li>
             <li class="list__img">
-              <figure class="figure">
+              <figure class="team-photos">
                 <img
                   src="./images/img5.jpg"
                   alt="Kobieta w okularach."
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption-item">
+                <figcaption class="team-photos__item">
                   John Doe
-                  <span class="figcaption-item__span">Frontend Developer</span>
+                  <span class="team-photos__span">Frontend Developer</span>
                   <div class="social-ellipse">
                     <svg class="social-ellipse__icons">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -274,15 +279,15 @@
               </figure>
             </li>
             <li class="list__img">
-              <figure class="figure">
+              <figure class="team-photos">
                 <img
                   src="./images/img6.jpg"
                   alt="Mężczyzna w jasnej koszuli."
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption-item">
-                  John Doe<span class="figcaption-item__span">Marketing</span>
+                <figcaption class="team-photos__item">
+                  John Doe<span class="team-photos__span">Marketing</span>
                   <div class="social-ellipse">
                     <svg class="social-ellipse__icons">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -307,15 +312,15 @@
               </figure>
             </li>
             <li class="list__img margin-zero">
-              <figure class="figure">
+              <figure class="team-photos">
                 <img
                   src="./images/img7.jpg"
                   alt="Mężczyzna w czarnej koszulce."
                   width="270"
                   height="260"
                 />
-                <figcaption class="figcaption-item">
-                  John Doe<span class="figcaption-item__span">UI Designer</span>
+                <figcaption class="team-photos__item">
+                  John Doe<span class="team-photos__span">UI Designer</span>
                   <div class="social-ellipse">
                     <svg class="social-ellipse__icons">
                       <use href="./images/icons.svg#icon-instagram"></use>
@@ -346,33 +351,33 @@
         <div class="container">
           <h2 class="heading">Nasi klienci</h2>
           <div>
-            <div class="rectangle-icon">
-              <svg class="customer-icon">
+            <div class="customer">
+              <svg class="customer__icon">
                 <use href="./images/icons.svg#icon-logo1"></use>
               </svg>
             </div>
-            <div class="rectangle-icon">
-              <svg class="customer-icon">
+            <div class="customer">
+              <svg class="customer__icon">
                 <use href="./images/icons.svg#icon-logo2"></use>
               </svg>
             </div>
-            <div class="rectangle-icon">
-              <svg class="customer-icon">
+            <div class="customer">
+              <svg class="customer__icon">
                 <use href="./images/icons.svg#icon-logo3"></use>
               </svg>
             </div>
-            <div class="rectangle-icon">
-              <svg class="customer-icon">
+            <div class="customer">
+              <svg class="customer__icon">
                 <use href="./images/icons.svg#icon-logo4"></use>
               </svg>
             </div>
-            <div class="rectangle-icon">
-              <svg class="customer-icon">
+            <div class="customer">
+              <svg class="customer__icon">
                 <use href="./images/icons.svg#icon-logo5"></use>
               </svg>
             </div>
-            <div class="rectangle-icon margin-zero">
-              <svg class="customer-icon">
+            <div class="customer margin-zero">
+              <svg class="customer__icon">
                 <use href="./images/icons.svg#icon-logo6"></use>
               </svg>
             </div>
@@ -381,7 +386,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container container--footer">
         <div class="footer-contact">
           <a class="logo logo--footer" href="./index.html"
             ><span class="logo__webstudio">Web</span>Studio</a
@@ -400,22 +405,22 @@
         </div>
         <div class="join-for-us">
           <p>DOŁĄCZ DO NAS</p>
-          <div class="social-ellipse footer-ellipse-icons">
+          <div class="social-ellipse social-ellipse--footer">
             <svg class="social-ellipse__icons">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </div>
-          <div class="social-ellipse footer-ellipse-icons">
+          <div class="social-ellipse social-ellipse--footer">
             <svg class="social-ellipse__icons">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </div>
-          <div class="social-ellipse footer-ellipse-icons">
+          <div class="social-ellipse social-ellipse--footer">
             <svg class="social-ellipse__icons">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </div>
-          <div class="social-ellipse footer-ellipse-icons margin-zero">
+          <div class="social-ellipse social-ellipse--footer margin-zero">
             <svg class="social-ellipse__icons">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
@@ -431,7 +436,7 @@
             />
             <button class="footer-form__btn" type="submit">
               Zapisz się
-              <svg class="newsletter-icon">
+              <svg class="form-newsletter-icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
