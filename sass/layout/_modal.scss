@@ -137,9 +137,9 @@
 }
 .modal-form__input:focus {
   border: 1px solid var(--hover-color);
-  .person-icon,
-  .tel-icon,
-  .email-icon {
+  + .person-icon,
+  + .tel-icon,
+  + .email-icon {
     fill: var(--hover-color);
   }
 }
